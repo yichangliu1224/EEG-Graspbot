@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="HOP">
-  <meta name="keywords" content="Multimodal, Co-Speech Gesture Generation">
+        content="EEG-based robotic grasping and placement with hybrid visual and motor imagery">
+  <meta name="keywords" content="EEG, BCI, motor imagery, visual imagery, robotics, grasping, placement">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HOP: Heterogeneous Topology-based Multimodal Entanglement for Co-Speech Gesture Generation</title>
+  <title>Robotic Grasping and Placement Controlled by EEG-Based Hybrid Visual and Motor Imagery</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,7 +20,7 @@
     gtag('js', new Date());
 
     gtag('config', 'G-PYVRSFMDRL');
-  </script>
+  </script> -->
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -29,10 +29,10 @@
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/Hop.png">
+  
+  <link rel="icon" href="./static/icon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -88,42 +88,77 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">            
-            <img src="./static/images/Hop.png" id="hop" width="5%"><span style="background: linear-gradient(to right,  indigo, skyblue, violet, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+          
+          <!-- Title -->
+          <!-- <h1 class="title is-1 publication-title">            
+            <img src="./static/icon.png" id="logo" width="5%"><span style="background: linear-gradient(to right,  indigo, skyblue, violet, indigo, violet); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
                 HOP
             </span>: <span style="color: skyblue;">H</span>eterogeneous T<span style="color: skyblue;">o</span>pology-based Multimodal Entanglement for Co-S<span style="color: skyblue;">p</span>eech Gesture Generation</h1>
-          <h4 class="title publication-title" style="font-size: 1.5rem;">CVPR 2025</h4>
-          <div class="is-size-5 publication-authors">
+            <img src="./assets/images/logo.png" id="logo" width="5%" alt="Project Logo">
+            Robotic Grasping and Placement Controlled by EEG-Based Hybrid Visual and Motor Imagery
+            </h1> -->
+
+            <h1 class="title is-1 publication-title" style="line-height:1.15;">
+              <img src="./assets/images/logo.png" id="logo" width="5%" alt="Project Logo" style="vertical-align:middle; margin-right:10px;">
+              <span style="background: linear-gradient(to right, indigo, skyblue, violet); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">
+                Robotic Grasping and Placement Controlled by EEG-Based Hybrid Visual and Motor Imagery
+              </span>
+            </h1>
+
+            <h4 class="title publication-title" style="font-size: 1.5rem;">ICRA 2026</h4>
+
+          <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Hongye Cheng</a><sup>*1</sup>,&nbsp;</span>
+              <a href="">Yichang Liu</a><sup>*1</sup>,&nbsp;</span>
             <span class="author-block">
-              <a href="https://star-uu-wang.github.io/">Tianyu Wang</a><sup>*2</sup>,&nbsp;</span>
-            <span class="author-block">
-              <a href="https://au.linkedin.com/in/guangsi-shi-040432126/en">Guangsi Shi</a><sup>†3</sup>,&nbsp;
-            </span>
-            <span class="author-block">
-              <a href="">Zexing Zhao</a><sup>1</sup>,&nbsp;
+              <a href="https://star-uu-wang.github.io/">Tianyu Wang</a><sup>*2</sup>,&nbsp;
             </span>
             <span class="author-block">
               <a href="https://yanweifu.github.io/">Yanwei Fu</a><sup>†2</sup>
             </span>
+          </div> -->
+
+          <!-- Authors -->
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="">Yichang Liu</a><sup>1</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://star-uu-wang.github.io/">Tianyu Wang</a><sup>1</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="#" onclick="return false;">Yawei Li</a><sup>3</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="#" onclick="return false;">Yugang Jiang</a><sup>3</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://yanweifu.github.io/">Yanwei Fu</a><sup>2</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="https://ziyiye.cn/">Ziyi Ye</a><sup>3*</sup>,&nbsp;
+            </span>
+            <span class="author-block">
+              <a href="#" onclick="return false;">Shouyan Wang</a><sup>1*</sup>
+            </span>
           </div>
+
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Northwest A&F University&nbsp; &nbsp;</span>
-            <span class="author-block"><sup>2</sup>Fudan University&nbsp; &nbsp;</span>
-            <span class="author-block"><sup>3</sup>Monash University</span>
+            <span class="author-block"><sup>1</sup>Institute of Science and Technology for Brain-inspired Intelligence (ISTBI), Fudan University, Shanghai, China&nbsp; &nbsp;</span>
+            <span class="author-block"><sup>2</sup>School of Data Science, Fudan University, Shanghai, China&nbsp; &nbsp;</span>
+            <span class="author-block"><sup>3</sup>Institute of Trustworthy Embodied AI, Fudan University, Shanghai, China</span>
           </div>
 
-          <p> <sup>*</sup> equal contribution &nbsp;
-            <sup>†</sup> corresponding authors &nbsp;
+          <p>
+            <sup>*</sup> corresponding authors &nbsp;
           </p>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2503.01175"
+                <a href="#" onclick="return false;"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -132,7 +167,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2503.01175"
+                <a href="#" onclick="return false;"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -141,9 +176,9 @@
                 </a>
               </span>
               </span>
-              <!-- Code Link. -->
+              <!-- Code Link. href="https://github.com/yichangliu1224/EEG-Graspbot" target="_blank" rel="noopener" -->
               <span class="link-block">
-                <a href="https://github.com/Chenghyyy/HOP-Heterogeneous-Topology-based-Multimodal-Entanglement-for-Co-Speech-Gesture-Generation"
+                <a href="#" onclick="return false;"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -160,16 +195,12 @@
   </div>
 </section>
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div class="image-container">
         <img src="./static/figs/teaser.png" alt="Teaser Image" width="100%" height="auto" />
       </div>
-      <!-- <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Comparison between DSG+ and our MDT-A2G-B with respect to training steps/times on a single A100 GPU. Compared to DSG+, MDT-A2G-B exhibits a faster training convergence speed and superior performance,
-          demonstrating the effectiveness of proposed method.
-      </h2> -->
     </div>
   </div>
 </section>
@@ -183,7 +214,7 @@
     max-width: 100%;
     height: auto;
   }
-</style>
+</style> -->
 
 <!-- 
 <section class="hero is-light is-small">
@@ -253,163 +284,353 @@
         <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Co-speech gestures are crucial non-verbal cues that enhance speech clarity and expressiveness in human communication, which have attracted increasing attention in multimodal research. 
-            While the existing methods have made strides in gesture accuracy, challenges remain in generating diverse and coherent gestures, as most approaches assume independence among multimodal inputs and lack explicit modeling of their interactions. 
-            In this work, we propose a novel multimodal learning method named HOP for co-speech gesture generation that captures the heterogeneous entanglement between gesture motion, audio rhythm, and text semantics, enabling the generation of coordinated gestures. 
-            By leveraging spatiotemporal graph modeling, we achieve the alignment of audio and action. Moreover, to enhance modality coherence, we build the audio-text semantic representation based on a reprogramming module, which is beneficial for cross-modality adaptation. 
-            Our approach enables the trimodal system to learn each other's features and represent them in the form of topological entanglement. Extensive experiments demonstrate that HOP achieves state-of-the-art performance, offering more natural and expressive co-speech gesture generation.
+            We present a framework that integrates EEG-based visual and motor imagery (VI/MI) with robotic control to enable real-time, intention-driven grasping and placement. 
+            Motivated by the promise of BCI-driven robotics to enhance human-robot interaction, this system bridges neural signals with physical control by deploying offline-pretrained decoders in a zero-shot manner within an online streaming pipeline. 
+            This establishes a dual-channel intent interface that translates visual intent into robotic actions, with VI identifying objects for grasping and MI determining placement poses, enabling intuitive control over both what to grasp and where to place. 
+            The system operates solely on EEG via a cue-free imagery protocol, achieving integration and online validation. 
+            Implemented on a Base robotic platform and evaluated across diverse scenarios, including occluded targets or varying participant postures, the system achieves online decoding accuracies of 40.23% (VI) and 62.59% (MI), with an end-to-end task success rate of 20.88%. 
+            These results demonstrate that high-level visual cognition can be decoded in real time and translated into executable robot commands, bridging the gap between neural signals and physical interaction, and validating the flexibility of a purely imagery-based BCI paradigm for practical human–robot collaboration.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-  <!-- Paper image. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Framework</h2>
-      <div class="publication-image">
-        <img src="./static/figs/framework.png" alt="Framework Image" style="max-width: 100%; height: auto;">
-      </div>
-      <div class="content has-text-justified">
-        <p>
-          <b>Overview of the proposed framework for multimodal gesture generation with heterogeneous topology entanglement. </b>
-          Given the input text of speech and the Mel-Spectrum obtained through audio preprocessing, we treat audio sequences as a bridge, linking text sequences and action sequences with distinct topologies. 
-          For the connection between text and audio, we apply a reprogramming layer to align data from these different modalities, utilizing a language model to extract embedded semantic information. To link action and audio, we employ the Graph-WaveNet approach to separately extract action and audio features. The entangled multimodal representations are then fed into the gesture generator through topological fusion, resulting in the generation of co-speech gestures.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Paper image. -->
-
-  <!-- Paper image. -->
-  <div class="columns is-centered has-text-centered">
-    <div class="column is-four-fifths">
-      <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Visualization</h2>
-      <div class="publication-image">
-        <img src="./static/figs/visualization.png" alt="Framework Image" style="max-width: 100%; height: auto;">
-      </div>
-      <div class="content has-text-justified">
-        <p>
-          <b>Visualization of generated gestures. </b>
-          The gestures generated by our method more effectively capture the semantic information in the text, exhibiting a greater range of movement rhythm in the highlighted sections. 
-          We highlight the text and its corresponding gesture actions using red and yellow shading, respectively.
-        </p>
-      </div>
-    </div>
-  </div>
-  <!-- Paper image. -->
-
-    
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-    <!-- Animation. -->
+    <!-- Overview -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <!-- Re-rendering. -->
-        <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Co-Speech Gesture Generation Demo</h2>
-<!--         <h3 class="title is-4">Demo</h3> -->
+        <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Overview</h2>
+        <div class="publication-image">
+          <img src="./assets/images/figure.png" alt="Overview Figure" style="max-width: 100%; height: auto;">
+        </div>
         <div class="content has-text-justified">
-<!--           <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p> -->
+          <p><b>High-level cognitive control pipeline for EEG-based robotic grasp-and-place.</b></p>
+          <p>
+            The system integrates offline-trained VI/MI decoders into an online streaming pipeline: VI decoding determines grasping intent (object selection),
+            while MI decoding determines placement intent (target pose/position). The resulting dual-channel commands drive a robotic arm to execute the grasp-and-place task in real-world settings, demonstrating seamless mapping from high-level visual cognition to physical manipulation.
+          </p>
+          <!-- <ol>
+            <li><b>Offline EEG data collection:</b> visual imagery (VI) and motor imagery (MI) EEG data are collected and labeled to train visual and motor decoders.</li>
+            <li><b>Online EEG acquisition:</b> a dual-channel system is deployed in which VI-EEG is decoded into grasping intentions and MI-EEG determines placement positions, enabling real-time task-level command generation.</li>
+            <li><b>Robotic control:</b> the trained decoders drive a robotic arm to perform the grasp-and-place task in real-world settings, demonstrating seamless mapping from high-level visual cognition to physical manipulation.</li>
+          </ol> -->
         </div>
-        <!-- <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/figs/demo.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
-        <div class="content">
-          <div class="columns is-centered">
-            <div class="column">
-              <video id="164" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/TED_expressive_identity_164.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            <div class="column">
-              <video id="505" controls playsinline height="100%">
-                <source src="./static/videos/TED_expressive_identity_505.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-          </div>
-
-          <div class="columns is-centered">
-            <div class="column">
-              <video id="833" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/TED_expressive_identity_833.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            <div class="column">
-              <video id="955" controls playsinline height="100%">
-                <source src="./static/videos/TED_expressive_identity_955.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <p>Ted Expressive Demo</p>
-        </div>
-
-        <br>
-
-        <div class="content">
-          <div class="columns is-centered">
-            <div class="column">
-              <video id="65" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/TED_identity_371.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            <div class="column">
-              <video id="371" controls playsinline height="100%">
-                <source src="./static/videos/TED_identity_685.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-          </div>
-
-          <div class="columns is-centered">
-            <div class="column">
-              <video id="685" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/TED_identity_742.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-            <div class="column">
-              <video id="886" controls playsinline height="100%">
-                <source src="./static/videos/TED_identity_886.mp4"
-                        type="video/mp4">
-              </video>
-            </div>
-          </div>
-          <p>Ted Demo</p>
-        </div>
-        <!--/ Re-rendering. -->
-
       </div>
     </div>
-    <!--/ Animation. -->
+
+    <!-- Paper image. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Paradigms</h2>
+        <div class="publication-image">
+          <img src="./assets/images/paradigms.png" alt="VI/MI Paradigms" style="max-width: 100%; height: auto;">
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            We design a cue-free imagery protocol with three offline tasks—visual perception (VP), visual imagery (VI), and motor imagery (MI).
+            During online control, VI is decoded to infer grasping intent (what to grasp), while MI is decoded to infer placement intent (where to place),
+            enabling a dual-channel interface for real-time grasp-and-place.
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!-- Paper image. -->
+
+    <!-- Paper image. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Data Collection</h2>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-4">Participants and Experimental Setup</h3>
+        <div class="content has-text-justified">
+          <p>
+            <b>Participants.</b> Five healthy graduate students (2 females; age 23–30 years; M = 25.4, SD = 2.97) participated in this study.
+            All five completed the offline experiments, and four further engaged in the online testing.
+          </p>
+          <p>
+            <b>Offline tasks.</b> Offline data collection comprised visual perception (VP), visual imagery (VI), and motor imagery (MI) tasks.
+          </p>
+          <p>
+            <b>EEG acquisition.</b> EEG was recorded using a 64-channel Neuracle system (59 scalp EEG, 2 mastoid, 2 EOG, 1 ECG) at a sampling rate of 1000 Hz.
+          </p>
+          <p>
+            <b>Robotics platform.</b> We employed a KINOVA GEN2 robot as the embodied platform for systematic interaction.
+            Two Intel RealSense D435 cameras served as the primary sensors of the robotic perception system.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-4">VI/MI Paradigms</h3>
+    
+        <div class="publication-image">
+          <img src="./assets/images/paradigms.png" alt="VI/MI Paradigms" style="max-width: 100%; height: auto;">
+        </div>
+    
+        <div class="content has-text-justified">
+          <p>
+            We design a cue-free imagery protocol with three offline tasks—visual perception (VP), visual imagery (VI), and motor imagery (MI).
+            During online control, VI is decoded to infer grasping intent (what to grasp), while MI is decoded to infer placement intent (where to place),
+            enabling a dual-channel interface for real-time grasp-and-place.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offline Results (3 images horizontally) -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-4">Offline Results</h3>
+
+        <div class="content has-text-justified">
+          <p>
+            Offline results for three tasks: (a) Visual Perception, (b) Visual Imagery, and (c) Motor Imagery.
+            For each task, accuracies are reported per participant across frequency conditions.
+          </p>
+        </div>
+
+        <div class="columns is-multiline is-centered">
+          <div class="column is-one-third">
+            <figure>
+              <img src="./assets/images/grouped_accuracy_scatter-VP.png" alt="Offline VP Results" style="width: 100%; height: auto;">
+              <figcaption>(a) Visual Perception (VP)</figcaption>
+            </figure>
+          </div>
+
+          <div class="column is-one-third">
+            <figure>
+              <img src="./assets/images/grouped_accuracy_scatter-VI.png" alt="Offline VI Results" style="width: 100%; height: auto;">
+              <figcaption>(b) Visual Imagery (VI)</figcaption>
+            </figure>
+          </div>
+
+          <div class="column is-one-third">
+            <figure>
+              <img src="./assets/images/grouped_accuracy_scatter-MI.png" alt="Offline MI Results" style="width: 100%; height: auto;">
+              <figcaption>(c) Motor Imagery (MI)</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================
+      ONLINE: Real-time Robotic Control
+    ========================= -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="background: linear-gradient(to right,  indigo, indigo, skyblue,indigo, indigo); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"> Online: Real-time Robotic Control</h2>
+      </div>
+    </div>
+
+    <div class="content has-text-justified">
+      <p>
+        <b>Online system results.</b>
+        <b>Top:</b> Base demo performance per subject on online VI/MI tasks across model/frequency settings (e.g., 63.64 (RGNN/40) denotes accuracy using the RGNN model at 40 Hz).
+        For each subject, we report the top-2 online accuracies and the overall mean.
+        <b>Bolded values</b> indicate the row maximum, while <u>underlined values</u> mark the second highest.
+        <b>Middle:</b> Overall online system accuracy, with online VI/MI accuracy representing the mean top-2 accuracies across all subjects.
+        <b>Bottom:</b> Overall system runtime statistics.
+      </p>
+    </div>
+
+    <!-- Top table -->
+    <h3 class="title is-5">Online Base Demonstration Results</h3>
+    <div class="table-container">
+      <table class="table is-striped is-fullwidth">
+        <thead>
+          <tr>
+            <th rowspan="2">Subject</th>
+            <th colspan="3">VI-online Task</th>
+            <th colspan="3">MI-online Task</th>
+          </tr>
+          <tr>
+            <th>Top1 Acc. (%)</th>
+            <th>Top2 Acc. (%)</th>
+            <th>Overall Avg. (%)</th>
+            <th>Top1 Acc. (%)</th>
+            <th>Top2 Acc. (%)</th>
+            <th>Overall Avg. (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>63.64 (RGNN/40)</td>
+            <td>44.44 (RGNN/60)</td>
+            <td><b>47.14</b></td>
+            <td>75.00 (RGNN/60)</td>
+            <td>60.00 (MLP/40)</td>
+            <td><b>61.67</b></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>50.00 (EEGNet/100)</td>
+            <td>39.13 (MLP/100)</td>
+            <td><u>40.82</u></td>
+            <td>65.22 (MLP/100)</td>
+            <td>60.00 (MLP/40)</td>
+            <td>58.41</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>50.00 (MLP/60)</td>
+            <td>33.67 (RGNN/60)</td>
+            <td>38.89</td>
+            <td>60.00 (RGNN/100)</td>
+            <td>53.85 (RGNN/60)</td>
+            <td>54.62</td>
+          </tr>
+          <tr>
+            <td>04</td>
+            <td>37.50 (RGNN/100)</td>
+            <td>33.67 (MLP/60)</td>
+            <td>34.72</td>
+            <td>66.67 (MLP/60)</td>
+            <td>60.00 (MLP/40)</td>
+            <td><u>60.00</u></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Middle table -->
+    <h3 class="title is-5">Online System Accuracy</h3>
+    <div class="table-container">
+      <table class="table is-striped is-fullwidth">
+        <thead>
+          <tr>
+            <th>Online VI avg Acc. (%)</th>
+            <th>Query success rate (%)</th>
+            <th>Online MI avg Acc. (%)</th>
+            <th>Place success rate (%)</th>
+            <th>System Accuracy (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><b>40.23</b></td>
+            <td>76.11</td>
+            <td><b>62.59</b></td>
+            <td>100</td>
+            <td><b>20.88</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bottom table -->
+    <h3 class="title is-5">System Operation Times (s)</h3>
+    <div class="table-container">
+      <table class="table is-striped is-fullwidth">
+        <thead>
+          <tr>
+            <th>Prepare</th>
+            <th>VI Task</th>
+            <th>VI Data Proc.</th>
+            <th>VI Infer</th>
+            <th>MI Task</th>
+            <th>MI Data Proc.</th>
+            <th>MI Infer</th>
+            <th>Robot Exec.</th>
+            <th>System Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>6.010</td>
+            <td>15.000</td>
+            <td>0.639</td>
+            <td><b>8.191</b></td>
+            <td>15.000</td>
+            <td>0.524</td>
+            <td><b>8.000</b></td>
+            <td><b>54.872</b></td>
+            <td><b>107.266</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
 
+    <!-- Online Demo (Extended) figure -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-4">Extended Online Demos</h3>
+
+        <div class="publication-image">
+          <img src="./assets/images/online_demo.png" alt="Online demos for extended scenarios" style="max-width: 100%; height: auto;">
+        </div>
+
+        <div class="content has-text-justified">
+          <p>
+            <b>Online Demos for extended application scenarios.</b>
+            <b>(a) Hidden Object Interaction:</b> Using only VI-EEG, the subject guides the system to identify and reveal a hidden object, demonstrating decoding without visual cues.
+            <b>(b) Direct Human–Robot Interaction:</b> By imagining the object and controlling hand movements through VI/MI, the subject interacts seamlessly with the robot, which places the object directly into their hand.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Online Demo Videos (1 wide + 4 small 2x2) -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-4">Online Demo Videos</h3>
+
+        <h4 class="title is-5" style="margin-top: 10px;">Full demonstration</h4>
+        <div class="content">
+          <video controls preload="metadata" playsinline width="100%" style="border-radius: 12px;">
+            <source src="./assets/videos/online_full.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h4 class="title is-5" style="margin-top: 18px;">Supplementary clips</h4>
+        <div class="columns is-multiline is-centered">
+          <div class="column is-half">
+            <video controls preload="metadata" playsinline width="100%" style="border-radius: 12px;">
+              <source src="./assets/videos/supp_1.mp4" type="video/mp4">
+            </video>
+            <p class="has-text-centered">Clip 1</p>
+          </div>
+
+          <div class="column is-half">
+            <video controls preload="metadata" playsinline width="100%" style="border-radius: 12px;">
+              <source src="./assets/videos/supp_2.mp4" type="video/mp4">
+            </video>
+            <p class="has-text-centered">Clip 2</p>
+          </div>
+
+          <div class="column is-half">
+            <video controls preload="metadata" playsinline width="100%" style="border-radius: 12px;">
+              <source src="./assets/videos/supp_3.mp4" type="video/mp4">
+            </video>
+            <p class="has-text-centered">Clip 3</p>
+          </div>
+
+          <div class="column is-half">
+            <video controls preload="metadata" playsinline width="100%" style="border-radius: 12px;">
+              <source src="./assets/videos/supp_4.mp4" type="video/mp4">
+            </video>
+            <p class="has-text-centered">Clip 4</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+
+
+
 </section>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{cheng2025hop,
@@ -419,30 +640,24 @@
   year      = {2025}
 }</code></pre>
   </div>
+</section> -->
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code></code></pre>
+  </div>
 </section>
 
-  
+
 <footer class="footer">
   <div class="container">
-    <!-- <div class="content has-text-centered"> -->
-      <!-- <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a> -->
-      <!-- <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a> -->
-    <!-- </div> -->
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-          <!-- <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p> -->
           <p style="text-align:center">
-            Please contact Dr. Guangsi Shi: guangsi.shi@monash.edu or Professor Yanwei Fu: yanweifu@fudan.edu.cn for feedback and questions. 
+            Please contact Yichang Liu: <a href="mailto:ycliu24@m.fudan.edu.cn">ycliu24@m.fudan.edu.cn</a> or Professor Yanwei Fu:
+            <a href="mailto:yanweifu@fudan.edu.cn">yanweifu@fudan.edu.cn</a> for feedback and questions.
           </p>
         </div>
       </div>
